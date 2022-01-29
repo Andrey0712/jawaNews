@@ -1,6 +1,6 @@
 package crud;
 
-import Utils.DB_Context;
+
 import entities.Category;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Category_CRUD {
-    //Session context = DB_Context.getSessionFactory().openSession();
+
     Scanner in = new Scanner(System.in);
 
     public void create_Category(Session session) {
