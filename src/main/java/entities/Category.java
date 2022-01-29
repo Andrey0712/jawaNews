@@ -1,6 +1,7 @@
 package entities;
 
 import lombok.Data;
+import org.hibernate.Session;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -17,5 +18,6 @@ public class Category {
 private String name;
 @OneToMany(mappedBy = "category")
     private List<Product> products= new ArrayList<>();
+
 
 }
